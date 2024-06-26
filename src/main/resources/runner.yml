@@ -1,0 +1,11 @@
+register:
+  url: http://asw.geedge.net
+  token: T_kahaafa
+executors:
+ - type: local
+   platform: android
+   concurrent: 1
+ - type: docker
+   platform: android
+   image: docker-android/docker-android:v11
+   concurrent: 2
